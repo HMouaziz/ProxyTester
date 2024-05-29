@@ -48,7 +48,7 @@ def get_geonode_configs():  # gets all configs in configs file
 
 def get_targets(amount):
     num = amount
-    with open('2022-01-04-halim-75000-random-store-urls.csv') as csv_file:
+    with open('data/2022-01-04-halim-75000-random-store-urls.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 1
         target_list = []
