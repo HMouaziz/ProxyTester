@@ -1,4 +1,4 @@
-# ProxyTester by HM
+# ProxyTester
 
 Welcome to ProxyTester. This project is my first real program, and I thought I might as well add it to my repos even though it's not really useful as is. 
 
