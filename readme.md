@@ -1,6 +1,6 @@
 # ProxyTester
 
-Welcome to ProxyTester. This project is my first real program, and I thought I might as well add it to my repos even though it's not really useful as is. 
+Welcome to ProxyTester. This project is my first real program, and I thought I might as well add it to my repos after finding it on my old computer. 
 
 ProxyTester is a simple tool for testing proxy speeds using various configurations. This README will guide you through the setup, usage, and structure of the project.
 
@@ -31,7 +31,7 @@ To get started with ProxyTester, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/proxytester.git
+    git clone https://github.com/Hmouaziz/proxytester.git
     ```
 2. Change into the project directory:
     ```bash
@@ -75,7 +75,7 @@ proxytester/
 ├── Configs/
 │   └── geonode_proxy_configs.py  # Contains proxy configurations
 ├── data/
-│   └── 2022-01-04-halim-75000-random-store-urls.csv  # Sample URLs for testing
+│   └── random-urls.csv  # Sample URLs for testing
 ├── functions.py  # Contains helper functions for tests
 ├── main.py  # Entry point of the application
 ├── menu.py  # Handles user interface and menu interactions
@@ -90,7 +90,7 @@ The proxy configurations are stored in `Configs/geonode_proxy_configs.py`. Here 
 
 ```python
 def geonode_US_rotating_residential_unmetered_config():
-    username = "geonode_'replace-me-with-user'-country-US"
+    username = "geonode_'replace-with-user'-country-US"
     password = "replace_with_secret_key"
     GEONODE_DNS = "rotating-residential.geonode.com:9000"
     proxy_config = {"http":"http://{}:{}@{}".format(username, password, GEONODE_DNS)}
